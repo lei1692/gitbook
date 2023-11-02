@@ -446,24 +446,3 @@ body {
 .markdown-section h6 {
   color: var(--H6Color);
 }
-:root { 
---ThemeColor: #FF4848; 
-}
-:root { 
-  --H1Color: #FF4848; 
-  --H2Color: #FF4848; 
-  --H3Color: #FF4848; 
-  --H4Color: #FF4848; 
-  --H5Color: #FF4848; 
-  --H6Color: #FF4848; 
-}
-
-        .markdown-section img {
-          margin: 0 auto;display: flex;
-          
-          max-width: 80%;
-        }
-        
-          .markdown-section img:hover {
-            box-shadow: 0 0 10px #bbb;
-          }
