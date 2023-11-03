@@ -10,7 +10,7 @@ module.exports = {
     plugins: [
         "-lunr", "-search", "search-pro", "code",
         "expandable-chapters", "back-to-top-button", "sidebar-style" ,
-        "splitter", "theme-lou"
+        "splitter", "theme-lou", "simple-mind-map"
     ],
   
     // 插件全局配置
@@ -38,15 +38,49 @@ module.exports = {
           "isBox": false, // 是否有边框(默认为true)
           "otherStyle": 'max-width: 80%;', // 图片其他自定义CSS样式
         },
+      },
+    "gitbook": {
+      "properties": {
+        "type": {
+            "type": "string",
+            "title": "Markdown or MindMup or Txtmap or Pandoc",
+            "required": false,
+            "default": "markdown"
+        },
+        "preset": {
+            "type": "string",
+            "title": "colorful or default",
+            "required": false,
+            "default": "colorful"
+        },
+        "linkShape": {
+            "type": "string",
+            "title": "diagonal or bracket",
+            "required": false,
+            "default": "diagonal"
+        },
+        "autoFit": {
+            "type": "boolean",
+            "title": "true or false",
+            "required": false,
+            "default": true
+        },
+        "style": {
+            "type": "object",
+            "title": "custom style",
+            "required": false
+        }
       }
+    }
+
 
 
 
       
-    },
+  },
   
-    // 模板变量
-    variables: {
-      // 自定义
-    },
-  };
+  // 模板变量
+  variables: {
+    // 自定义
+  },
+};
